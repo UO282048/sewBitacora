@@ -2,7 +2,7 @@
 David Martínez Castañón - UO282048
 Estilo de la calculadora RPN
 ************/
-@media (max-width: 20em) {
+@media (max-width: 40em) {
     main {
         width: 85%;
         font-size: 3.75vw;
