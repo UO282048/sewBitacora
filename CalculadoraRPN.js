@@ -267,7 +267,7 @@ class CalculadoraRPN {
         }
     }
     pop() {
-        if (this.stack.length <= 0) throw "ERROR: Not enough operands";
+        if (this.stack.length <= 0) throw "ERROR: No hay suficientes números guardados";
         return this.stack.pop();
     }
 
@@ -316,6 +316,7 @@ class CalculadoraRPN {
         for (var i in this.stack) {
             pantalla += this.stack[i] + "\n";
         }
+        if (pantalla == "") pantalla = "Pulsa 'Ent' para guardar números. Las operaciones se realizan sobre los últimos números guardados";
         document.querySelector("textarea").value = pantalla;
     }
     /**
