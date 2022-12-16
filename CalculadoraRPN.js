@@ -267,7 +267,7 @@ class CalculadoraRPN {
         }
     }
     pop() {
-        if (this.stack.length <= 0) throw "No hay suficientes números guardados";
+        if (this.stack.length <= 0) throw "No hay suficientes operandos";
         return this.stack.pop();
     }
 
@@ -316,7 +316,7 @@ class CalculadoraRPN {
         for (var i in this.stack) {
             pantalla += this.stack[i] + "\n";
         }
-        if (pantalla == "") pantalla = "Escribe un número            \nPulsa 'Ent'                  \nEl número se guarda          \nOpera con los últimos números";
+        if (pantalla == "") pantalla = "\n1. Escribe los operandos   \n\n2. Pulsa 'Ent'             \n\n3. Los operandos se guardan\n\n4. Elige las operaciones   ";
         document.querySelector("textarea").value = pantalla;
     }
     /**
