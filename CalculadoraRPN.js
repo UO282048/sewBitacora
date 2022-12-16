@@ -316,7 +316,7 @@ class CalculadoraRPN {
         for (var i in this.stack) {
             pantalla += this.stack[i] + "\n";
         }
-        if (pantalla == "") pantalla = "Pulsa 'Ent' para guardar números. Las operaciones se realizan sobre los últimos números guardados";
+        if (pantalla == "") pantalla = "Escribe un número            \nPulsa 'Ent'                  \nEl número se guarda          \nOpera con los últimos números";
         document.querySelector("textarea").value = pantalla;
     }
     /**
