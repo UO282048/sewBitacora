@@ -267,7 +267,7 @@ class CalculadoraRPN {
         }
     }
     pop() {
-        if (this.stack.length <= 0) throw "ERROR: No hay suficientes números guardados";
+        if (this.stack.length <= 0) throw "No hay suficientes números guardados";
         return this.stack.pop();
     }
 
