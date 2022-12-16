@@ -81,3 +81,8 @@ input[type="text"] {
     border: 0.1em solid black;
     padding: 0.2em 1em;
 }
+
+input[type="button"][value="Ent"] {
+    background-color: #8b1414;
+    color: white;
+}
